@@ -18,7 +18,7 @@
   <distributionManagement>
     <snapshotRepository>
       <id>Test</id>
-      <url>http://18.212.65.162:8080/repository/Test/</url>
+      <url>http://54.165.73.46:8080/repository/Test/</url>
     </snapshotRepository>
   </distributionManagement>
   <build>
