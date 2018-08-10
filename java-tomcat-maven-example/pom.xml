@@ -15,6 +15,12 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>Test</id>
+      <url>http://18.212.65.162:8080/repository/Test/</url>
+    </snapshotRepository>
+  </distributionManagement>
   <build>
     <finalName>java-tomcat-maven-example</finalName>
     <plugins>
