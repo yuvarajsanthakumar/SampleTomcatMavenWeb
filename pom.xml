@@ -31,11 +31,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <version>2.3</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals><goal>copy</goal></goals>
-            <configuration>
+		<configuration>
 				<manifest>
                     <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                 </manifest>
@@ -46,6 +42,13 @@
                         <Implementation-Version>${build.number}</Implementation-Version>
                     </manifestEntries>
                 </archive>
+		</configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals><goal>copy</goal></goals>
+            <configuration>
+				
               <artifactItems>
                 <artifactItem>
                   <groupId>com.github.jsimone</groupId>
