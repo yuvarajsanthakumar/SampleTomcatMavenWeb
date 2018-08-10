@@ -9,6 +9,7 @@
   <url>http://maven.apache.org</url>
   <properties>
     <build.number>SNAPSHOT</build.number>
+	<build.date>SNAPSHOT</build.date>
   </properties>
   <dependencies>
     <dependency>
@@ -38,8 +39,8 @@
                     <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                 </manifest>
                     <manifestEntries>
-                        <Implementation-Version>${build.number}</Implementation-Version>
-						<Test-Property>Test</Test-Property>
+                        <Jenkins-Build-Number>${build.number}</Jenkins-Build-Number>
+						<Jenkins-Build-Date>${build.date}</Jenkins-Build-Date>
                     </manifestEntries>
                 </archive>
 		</configuration>
